@@ -19,6 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New table `MenuProducto` to assign products and variants to menus with custom pricing.
 - Optional seed data for branch and menu setup.
 - Additional indexes and constraints to improve integrity and lookup performance.
+- Initial dataset scripts under `data/` for master data, products, menus, variants,
+  modifiers, combos, recipes, inventory, roles and test orders.
+- Query scripts under `queries/` for database consultation and validation support.
 
 ### Changed
 
@@ -29,6 +32,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced `ProductoModificador` with selection rules:
   `min_selecciones`, `max_selecciones`, `permite_repetir_opcion` and `texto_guia`.
 - Added validation rules and migration-safe updates for existing modifier data.
+- Updated `README.md` to describe the current repository layout and document the
+  data loading sequence, purpose and status of each script block.
 
 ## [1.0.] - 2026-05-10
 
