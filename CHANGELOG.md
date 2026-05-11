@@ -7,6 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Migration script `scripts/updates/2026-05-10_migrations.sql` for digital menu,
+  branches and product extension features.
+- New table `Sucursal` to manage restaurant branches.
+- New table `ProductoImagen` to support product gallery and primary image records.
+- New table `ProductoVariante` to support product variants with combination-based pricing.
+- New table `ProductoVarianteOpcion` to link variants with modifier options.
+- New table `Menu` to manage menu catalogs by branch, schedule and type.
+- New table `MenuProducto` to assign products and variants to menus with custom pricing.
+- Optional seed data for branch and menu setup.
+- Additional indexes and constraints to improve integrity and lookup performance.
+
+### Changed
+
+- Extended `Mesa`, `Caja` and `Pedido` with `id_sucursal` to associate operational data
+  with branches.
+- Extended `Producto` with `imagen_principal_url` and `nombre_corto`.
+- Extended `DetallePedido` with `id_variante` and `id_menu_producto`.
+- Enhanced `ProductoModificador` with selection rules:
+  `min_selecciones`, `max_selecciones`, `permite_repetir_opcion` and `texto_guia`.
+- Added validation rules and migration-safe updates for existing modifier data.
+
 ## [1.0.] - 2026-05-10
 
 ### Added
