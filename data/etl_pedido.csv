@@ -1,0 +1,25 @@
+sheet,numero_pedido,fecha_hora_creacion,tipo,canal,estado_actual,cliente_dni,usuario_pin,subtotal,descuento_monto,costo_delivery,total_con_igv,observaciones_generales,tiempo_estimado,producto_codigo,cantidad,precio_unitario,subtotal_detalle,observaciones_detalle,categoria_nombre,categoria_descripcion,categoria_orden_visual,categoria_activo,producto_nombre,producto_descripcion,precio_base,tiempo_preparacion_segundos,producto_activo,requiere_nota_alergia,cliente_nombres,cliente_apellidos,cliente_telefono,cliente_email,cliente_fecha_nacimiento,cliente_fecha_registro,cliente_puntos_acumulados,cliente_nivel,cliente_activo,usuario_nombre_completo,usuario_cargo,usuario_turno_asignado,usuario_fecha_ingreso,usuario_activo
+CategoriaProducto,,,,,,,,,,,,,,,,,,,,Entradas,Entradas y piqueos,1,1,,,,,,,,,,,,,,,,,,
+CategoriaProducto,,,,,,,,,,,,,,,,,,,,Bebidas,Bebidas frias y calientes,2,1,,,,,,,,,,,,,,,,,,
+CategoriaProducto,,,,,,,,,,,,,,,,,,,,Postres,Postres de la casa,3,1,,,,,,,,,,,,,,,,,,
+Producto,,,,,,,,,,,,,,,,,,,,Entradas,,,,ENT001,Salchipapas,Papas fritas con salchicha,15.50,600,1,0,,,,,,,,,,,,,,
+Producto,,,,,,,,,,,,,,,,,,,,Entradas,,,,ENT002,Yucas doradas,Porcion de yucas fritas,8.00,480,1,0,,,,,,,,,,,,,,
+Producto,,,,,,,,,,,,,,,,,,,,Bebidas,,,,BEB001,Chicha morada (vaso),Bebida tradicional,5.00,120,1,0,,,,,,,,,,,,,,
+Producto,,,,,,,,,,,,,,,,,,,,Bebidas,,,,BEB002,Limonada (jarra),Jarra de limonada,12.00,180,1,0,,,,,,,,,,,,,,
+Producto,,,,,,,,,,,,,,,,,,,,Postres,,,,POS001,Crema volteada,Postre clasico,7.00,60,1,0,,,,,,,,,,,,,,
+Cliente,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cliente,General,,,,,2026-05-01,0,BASICO,1,,,,,
+Cliente,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Maria,Lopez,987654321,maria.lopez@email.com,1995-05-12,2026-05-10,120,BASICO,1,,,,,
+Cliente,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Carlos,Ramirez,976543210,carlos.ramirez@email.com,1990-08-20,2026-05-11,250,PLATA,1,,,,,
+Usuario,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Administrador Principal,ADMIN,COMPLETO,2024-01-10,1
+Usuario,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mozo Salon Uno,MOZO,TARDE,2024-02-15,1
+Usuario,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Cajero Turno Manana,CAJERO,MANANA,2024-02-01,1
+Pedido,PED-ETL-001,2026-05-15 12:30:00,MESA,SALON,Registrado,11111111,222222,28.50,0.00,0.00,28.50,Pedido de prueba ETL 1,25,,,,,,,,,,,,,,,,,,,,,,,,
+Pedido,PED-ETL-002,2026-05-15 13:10:00,DELIVERY,WHATSAPP,Registrado,22222222,111111,27.00,0.00,5.00,32.00,Pedido delivery ETL 2,45,,,,,,,,,,,,,,,,,,,,,,,,
+Pedido,PED-ETL-003,2026-05-16 20:05:00,MESA,SALON,Registrado,00000000,222222,15.50,0.00,0.00,15.50,Pedido simple ETL 3,25,,,,,,,,,,,,,,,,,,,,,,,,
+DetallePedido,PED-ETL-001,,,,,,,,,,,,,,ENT001,1,15.50,15.50,,,,,,,,,,,,,,,,,,,,,
+DetallePedido,PED-ETL-001,,,,,,,,,,,,,,BEB001,1,5.00,5.00,,,,,,,,,,,,,,,,,,,,,
+DetallePedido,PED-ETL-001,,,,,,,,,,,,,,POS001,1,7.00,7.00,Sin azucar,,,,,,,,,,,,,,,,,,,,
+DetallePedido,PED-ETL-002,,,,,,,,,,,,,,ENT002,1,8.00,8.00,,,,,,,,,,,,,,,,,,,,,
+DetallePedido,PED-ETL-002,,,,,,,,,,,,,,BEB002,1,12.00,12.00,,,,,,,,,,,,,,,,,,,,,
+DetallePedido,PED-ETL-002,,,,,,,,,,,,,,ENT001,1,15.50,15.50,,,,,,,,,,,,,,,,,,,,,
+DetallePedido,PED-ETL-003,,,,,,,,,,,,,,ENT001,1,15.50,15.50,,,,,,,,,,,,,,,,,,,,,
