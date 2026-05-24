@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- SQL triggers to manage insert/update/delete events in core tables.
+- Cursor examples to illustrate iterative data processing patterns.
+- Example views for data warehouse reporting (sales and operational metrics).
+
+### Added
+
 - Migration script `scripts/updates/2026-05-10_migrations.sql` for digital menu,
   branches and product extension features.
 - New table `Sucursal` to manage restaurant branches.
